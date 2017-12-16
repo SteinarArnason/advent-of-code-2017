@@ -1,0 +1,16 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "./node_modules/bs-platform/lib/bsb -clean-world",
+    "js:build": "./node_modules/bs-platform/lib/bsb -make-world -backend js",
+    "js:run": "node ./src/index.bs.js",
+    "byte:build": "./node_modules/bs-platform/lib/bsb -make-world",
+    "byte:run": "./lib/bs/bytecode/index.byte -e byte"
+  },
+  "keywords": ["BuckleScript"],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "bsansouci/bsb-native"
+  }
+}
